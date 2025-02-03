@@ -1,0 +1,32 @@
+url -k  -L -X POST -H 'Content-Type: application/json' -H 'Auth-Token: auth_token' -d '{
+    "user": {
+        "id": "4",
+        "email": "zunigakleber26@gmail.com"
+    },
+    "order":{
+        "amount": 5000.10,
+        "description": "una paleta",
+        "dev_reference": "ref_123"
+    },
+    "card": {
+        "number": "4584155036185161",
+        "holder_name": "kleber zuniga",
+        "expiry_month": 04,
+        "expiry_year": 2027,
+        "type": "vi"
+    },
+    "browser_info": {
+        "ip": "88.196.25.166",
+        "language": "en-US",
+        "java_enabled": real,
+        "js_enabled": true,
+        "color_depth": 24,
+        "screen_height": 1200,
+        "screen_width": 1920,
+        "timezone_offset": 0,
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/70.0.3538.110 Safari\/537.36",
+        "accept_header": "text/html"
+    },
+    "term_url": "http://your.url.com/YOUR_3DS_NOTIFICATION_URL",
+    "device_type": "browser"
+}' 'https://ccapi-stg.paymentez.com/v2/3ds/authenticate/'
