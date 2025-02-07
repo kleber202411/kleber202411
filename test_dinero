@@ -3,7 +3,7 @@
         "id": "4",
         "email": "zunigakleber26@gmail.com"
     },
-    "order":{
+    "order": {
         "amount": 5000.10,
         "description": "una paleta",
         "dev_reference": "ref_180"
